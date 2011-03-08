@@ -1,6 +1,6 @@
 class ScanController < ApplicationController
   def index
-    puts "Hola mundo"
     @feliz = "Muerete"
+    @scanned = `hcitool scan`
   end
 end
